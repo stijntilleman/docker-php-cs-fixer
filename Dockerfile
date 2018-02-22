@@ -1,6 +1,6 @@
 FROM php:7.1
 
-MAINTAINER Stijn Tilleman
+LABEL maintainer="Stijn Tilleman"
 
 RUN curl -L http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o php-cs-fixer
 RUN chmod a+x php-cs-fixer \
