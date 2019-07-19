@@ -1,4 +1,4 @@
-FROM php:7.1.16-cli-alpine
+FROM php:7.3-alpine3.10
 
 LABEL maintainer="Stijn Tilleman"
 
