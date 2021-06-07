@@ -6,16 +6,16 @@
 
 ```sh
 # will show you the help message by default
-docker run stijntilleman/php-cs-fixer
+docker run stijntilleman/php-cs-fixer:3
 
 # will run the fixer with the PSR2 ruleset on the current directory
-docker run --rm -v `pwd`:/app stijntilleman/php-cs-fixer fix ./ --rules=@PSR2
+docker run --rm -v `pwd`:/app stijntilleman/php-cs-fixer:3 fix ./ --rules=@PSR2
 ```
 
 Or you could add something like this to your `.bashrc`
 
 ```
 php-cs-fixer () {
-  docker run -it --rm -v `pwd`:/app  stijntilleman/php-cs-fixer fix --rules=@PSR2 --verbose $@
+  docker run -it --rm -v `pwd`:/app  stijntilleman/php-cs-fixer:3 fix --rules=@PSR2 --verbose $@
 }
 ```
